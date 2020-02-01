@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+        <div class="screen-shadow"></div>
+        <nav class="navbar navbar-dark bg-dark fixed-top" style="justify-content:unset;">
+            <button type="button" class="navbar-toggler d-lg-none">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div>
+                <div class="navbar-brand flex-lg-grow-0 flex-grow-1"><a href="#"><img src="./assets/img/logo.png" alt="Logo"></a></div>
+                <ul class="unstyled-list d-none d-xl-inline-flex">
+                    <li class="mr-3 mr-xl-4 active"><a href="#" class="font-weight-bold text-white">Início</a></li>
+                    <li class="mr-3 mr-xl-4"><a href="#" class="text-secondary font-weight-bold">Séries</a></li>
+                    <li class="mr-3 mr-xl-4"><a href="#" class="text-secondary font-weight-bold">Filmes</a></li>
+                    <li class="mr-3 mr-xl-4"><a href="#" class="text-secondary font-weight-bold">Adicionados Recentemente</a></li>
+                    <li class="mr-3 mr-xl-4"><a href="#" class="text-secondary font-weight-bold">Minha Lista</a></li>
+                </ul>
+                <ul class="unstyled-list d-none d-lg-inline-flex d-xl-none">
+                    <li class="mr-5 active"><a href="#" class="text-danger font-weight-bold">Navegar</a></li>
+                    <li class="mr-5"><a href="#" class="text-secondary font-weight-bold">Infantil</a></li>
+                </ul>
+            </div>
+            <form class="form-inline ml-auto">
+                    <input class="form-control" type="search" placeholder="Busca">
+            </form>
+            <div class="d-none d-lg-flex text-white ml-4">
+                <img class="d-flex align-items-center" src="./assets/img/rdg.jpg" style="max-height: 43px;">
+                <p class="ml-2 mb-0 d-none d-xl-block" style="font-weight: 500;">RODRIGO SANTOS</p>
+            </div>
+        </nav>
+        <div class="d-lg-none" id="navbar">
+            <div class="sidebar sidebar-close">
+                <ul class="unstyled-list">
+                   <li>
+                        <div class="media media-avatar">
+                            <img class="d-block" src="./assets/img/rdg.jpg" style="max-height: 43px;">
+                            <div class="media-body">
+                                <p class="ml-3 mb-0 h6">RODRIGO SANTOS</p>
+                                <small style="cursor: pointer;" class="ml-3"><a href="#"><a href="#" >Trocar de Perfil</a></small>
+                            </div>
+                        </div>
+                   </li>
+                   <li class="divider"></li>
+                   <li class="mx-2">Início</li>
+                   <li class="mx-2">Minha lista</li>
+                   <li class="mx-2">Séries de ação e aventura</li>
+                   <li class="mx-2">Ação e aventura</li>
+                   <li class="mx-2">Séries teen</li>
+                   <li class="mx-2">Filmes africanos</li>
+                   <li class="mx-2">Séries da América Latina</li>
+                   <li class="mx-2">Filmes de Anime</li>
+               </ul>
+           </div>
+        </div>
+        <div class="row no-gutters mb-1">
+            <div class="col-12">
+                <div class="card main-card">
+                    <img src="./assets/img/vingadores-era-de-ultron.jpg" alt="" class="card-img">
+                    <div class="d-flex">
+                        <div class="card-img-overlay text-white p-4">
+                            <h4 class="card-title mb-1">Vingadores: A era de Ultron</h4>
+                            <small class="card-text text-secondary d-block">2017  &bull;  182min  &bull;  <span class="badge badge-warning">12</span></small>
+                            <p class="text-secondary col-6 col-xl-7 my-4 my-md-2 px-1 d-none">Ao tentar proteger o planeta de ameaças, Tony Stark constrói um sistema de inteligência artificial que cuidaria da paz mundial. O projeto acaba dando errado e gera o nascimento do Ultron. Com o destino da Terra em jogo, Capitão América, Homem de Ferro, Thor, Hulk, Viúva Negra e Gavião Arqueiro terão que se unir para mais uma vez salvar a raça humana da extinção.</p>
+                            <button class="btn text-white font-weight-bold text-uppercase mt-1" type="submit">Assistir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="thumbnail-show p-3">
+            <h5 class="titles text-secondary">Adicionados recentemente</h5>
+            
+                        <div class="titles-show d-flex flex-nowrap overflow-hidden slide">
+
+
+                            <div class="title-item">
+                                
+                                <img src="./assets/img/greys-anatomy.jpg">
+                                <div class="col item-menu">
+                                
+                                    <i class="row material-icons">play_arrow</i>
+                                    <h6 class="row text-white mb-1">Grey's Anatomy</h6>
+                                    <div class="row menu-row">
+                                        <small class="text-success font-weight-bold mr-1">98% relevante</small>
+                                        <span class="badge badge-danger">16</span>
+                                        <small class="text-white ml-1 font-weight-bold">10 temporadas</small>
+                                    </div>
+                                    <div class="row menu-row">
+                                        <small class="mr-1 text-white">Médico</small>
+                                        <small class="mx-1 text-white">Suspense</small>
+                                        <small class="mx-1 text-white">Tenção</small>
+                                    </div>
+                                
+                                </div>
+                            </div>
+
+                            <div class="title-item">
+                                <img src="./assets/img/guardios-da-galaxia.jpg">
+                                <div class="col item-menu">
+                                
+                                    <i class="row material-icons">play_arrow</i>
+                                    <h6 class="row text-white mb-1">Guardiões da Galáxia</h6>
+                                    <div class="row menu-row">
+                                        <small class="text-success font-weight-bold mr-1">92% relevante</small>
+                                        <span class="badge badge-warning">12</span>
+                                        <small class="text-white ml-1 font-weight-bold">162 min.</small>
+                                    </div>
+                                    <div class="row menu-row">
+                                        <small class="mr-1 text-white">Fantasia</small>
+                                        <small class="mx-1 text-white">Sci-fi</small>
+                                        <small class="mx-1 text-white">Marvel</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="title-item">
+                                <img src="./assets/img/homem-de-ferro-2.jpg">
+                                <div class="col item-menu">
+                                
+                                    <i class="row material-icons">play_arrow</i>
+                                    <h6 class="row text-white mb-1">Homem de Ferro 2</h6>
+                                    <div class="row menu-row">
+                                        <small class="text-white mr-1">2010</small>
+                                        <span class="badge badge-primary">10</span>
+                                        <small class="text-white ml-1 font-weight-bold">140 min.</small>
+                                    </div>
+                                    <div class="row menu-row">
+                                        <small class="mr-1 text-white">Fantasia</small>
+                                        <small class="mx-1 text-white">Sci-fi</small>
+                                        <small class="mx-1 text-white">Marvel</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="title-item">
+                            <img src="./assets/img/thor-o-mundo-sombrio.jpg" alt="">
+                                <div class="col item-menu">
+                                    
+                                    <i class="row material-icons">play_arrow</i>
+                                    <h6 class="row text-white mb-1">Thor, o Mundo Sombrio</h6>
+                                    <div class="row menu-row">
+                                        <small class="text-success font-weight-bold mr-1">92% relevante</small>
+                                        <span class="badge badge-orange">14</span>
+                                        <small class="text-white ml-1 font-weight-bold">160 min.</small>
+                                    </div>
+                                    <div class="row menu-row">
+                                        <small class="mr-1 text-white">Universo</small>
+                                        <small class="mx-1 text-white">Suspense</small>
+                                        <small class="mx-1 text-white">Marvel</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="title-item">
+                                <img src="./assets/img/the-rain.jpg" alt="">
+                                <div class="col item-menu">
+                                    
+                                    <i class="row material-icons">play_arrow</i>
+                                    <h6 class="row text-white mb-1">The Rain</h6>
+                                    <div class="row menu-row">
+                                        <small class="text-white mr-1">2018</small>
+                                        <span class="badge badge-orange">14</span>
+                                        <small class="text-white ml-1 font-weight-bold">160 min.</small>
+                                    </div>
+                                    <div class="row menu-row">
+                                        <small class="mr-1 text-white">Drama</small>
+                                        <small class="mx-1 text-white">Suspense</small>
+                                        <small class="mx-1 text-white">Sci-fi</small>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                        </div>
+                        
+        </div>
+        <div class="thumbnail-show p-3">
+            <h5 class="titles text-secondary">Em alta</h5>
+                        
+            <div class="titles-show d-flex flex-nowrap overflow-hidden slide">
+
+
+                    <div class="title-item">
+                        <img src="./assets/img/greys-anatomy.jpg">
+                        <div class="col item-menu">
+                        
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">Grey's Anatomy</h6>
+                            <div class="row menu-row">
+                                <small class="text-success font-weight-bold mr-1">98% relevante</small>
+                                <span class="badge badge-danger">16</span>
+                                <small class="text-white ml-1 font-weight-bold">10 temporadas</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Médico</small>
+                                <small class="mx-1 text-white">Suspense</small>
+                                <small class="mx-1 text-white">Tenção</small>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="title-item">
+                        <img src="./assets/img/guardios-da-galaxia.jpg">
+                        <div class="col item-menu">
+                        
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">Guardiões da Galáxia</h6>
+                            <div class="row menu-row">
+                                <small class="text-success font-weight-bold mr-1">92% relevante</small>
+                                <span class="badge badge-warning">12</span>
+                                <small class="text-white ml-1 font-weight-bold">162 min.</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Fantasia</small>
+                                <small class="mx-1 text-white">Sci-fi</small>
+                                <small class="mx-1 text-white">Marvel</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="title-item">
+                                <img src="./assets/img/homem-de-ferro-2.jpg">
+                                <div class="col item-menu">
+                                
+                                    <i class="row material-icons">play_arrow</i>
+                                    <h6 class="row text-white mb-1">Homem de Ferro 2</h6>
+                                    <div class="row menu-row">
+                                        <small class="text-white mr-1">2010</small>
+                                        <span class="badge badge-primary">10</span>
+                                        <small class="text-white ml-1 font-weight-bold">140 min.</small>
+                                    </div>
+                                    <div class="row menu-row">
+                                        <small class="mr-1 text-white">Fantasia</small>
+                                        <small class="mx-1 text-white">Sci-fi</small>
+                                        <small class="mx-1 text-white">Marvel</small>
+                                    </div>
+
+                                </div>
+                    </div>
+
+                    <div class="title-item">
+                    <img src="./assets/img/thor-o-mundo-sombrio.jpg" alt="">
+                        <div class="col item-menu">
+                            
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">Thor, o Mundo Sombrio</h6>
+                            <div class="row menu-row">
+                                <small class="text-success font-weight-bold mr-1">92% relevante</small>
+                                <span class="badge badge-orange">14</span>
+                                <small class="text-white ml-1 font-weight-bold">160 min.</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Universo</small>
+                                <small class="mx-1 text-white">Suspense</small>
+                                <small class="mx-1 text-white">Marvel</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="title-item">
+                        <img src="./assets/img/the-rain.jpg" alt="">
+                        <div class="col item-menu">
+                            
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">The Rain</h6>
+                            <div class="row menu-row">
+                                <small class="text-white mr-1">2018</small>
+                                <span class="badge badge-orange">14</span>
+                                <small class="text-white ml-1 font-weight-bold">160 min.</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Drama</small>
+                                <small class="mx-1 text-white">Suspense</small>
+                                <small class="mx-1 text-white">Sci-fi</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                        
+        </div>
+        <div class="thumbnail-show p-3">
+            <h5 class="titles text-secondary">Continuar assistindo como Rodrigo Santos</h5>
+                        
+            <div class="titles-show d-flex flex-nowrap overflow-hidden slide">
+
+
+                    <div class="title-item">
+                        <img src="./assets/img/greys-anatomy.jpg">
+                        <div class="col item-menu">
+                        
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">Grey's Anatomy</h6>
+                            <div class="row menu-row">
+                                <small class="text-success font-weight-bold mr-1">98% relevante</small>
+                                <span class="badge badge-danger">16</span>
+                                <small class="text-white ml-1 font-weight-bold">10 temporadas</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Médico</small>
+                                <small class="mx-1 text-white">Suspense</small>
+                                <small class="mx-1 text-white">Tenção</small>
+                            </div>
+                        
+                        </div>
+                    </div>
+
+                    <div class="title-item">
+                        <img src="./assets/img/guardios-da-galaxia.jpg">
+                        <div class="col item-menu">
+                        
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">Guardiões da Galáxia</h6>
+                            <div class="row menu-row">
+                                <small class="text-success font-weight-bold mr-1">92% relevante</small>
+                                <span class="badge badge-warning">12</span>
+                                <small class="text-white ml-1 font-weight-bold">162 min.</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Fantasia</small>
+                                <small class="mx-1 text-white">Sci-fi</small>
+                                <small class="mx-1 text-white">Marvel</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="title-item">
+                            <img src="./assets/img/homem-de-ferro-2.jpg">
+                            <div class="col item-menu">
+                            
+                                <i class="row material-icons">play_arrow</i>
+                                <h6 class="row text-white mb-1">Homem de Ferro 2</h6>
+                                <div class="row menu-row">
+                                    <small class="text-white mr-1">2010</small>
+                                    <span class="badge badge-primary">10</span>
+                                    <small class="text-white ml-1 font-weight-bold">140 min.</small>
+                                </div>
+                                <div class="row menu-row">
+                                    <small class="mr-1 text-white">Fantasia</small>
+                                    <small class="mx-1 text-white">Sci-fi</small>
+                                    <small class="mx-1 text-white">Marvel</small>
+                                </div>
+
+                            </div>
+                    </div>
+
+                    <div class="title-item">
+                    <img src="./assets/img/thor-o-mundo-sombrio.jpg" alt="">
+                        <div class="col item-menu">
+                            
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">Thor, o Mundo Sombrio</h6>
+                            <div class="row menu-row">
+                                <small class="text-success font-weight-bold mr-1">92% relevante</small>
+                                <span class="badge badge-orange">14</span>
+                                <small class="text-white ml-1 font-weight-bold">160 min.</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Universo</small>
+                                <small class="mx-1 text-white">Suspense</small>
+                                <small class="mx-1 text-white">Marvel</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="title-item">
+                        <img src="./assets/img/the-rain.jpg" alt="">
+                        <div class="col item-menu">
+                            
+                            <i class="row material-icons">play_arrow</i>
+                            <h6 class="row text-white mb-1">The Rain</h6>
+                            <div class="row menu-row">
+                                <small class="text-white mr-1">2018</small>
+                                <span class="badge badge-orange">14</span>
+                                <small class="text-white ml-1 font-weight-bold">160 min.</small>
+                            </div>
+                            <div class="row menu-row">
+                                <small class="mr-1 text-white">Drama</small>
+                                <small class="mx-1 text-white">Suspense</small>
+                                <small class="mx-1 text-white">Sci-fi</small>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+                        
+        </div>
+        
+
+        <footer class="container-fluid text-secondary">
+            <div class="row">
+                <div class="col-sm-6 d-lg-none">
+                    <h6>Termos de uso</h6>
+                    <h6>Declaração de privacidade</h6>
+                </div>
+                <div class="col-sm-6 d-lg-none">
+                    <h6>Preferências de Cookies</h6>
+                    <h6>Centro de ajuda</h6>
+                </div>
+                    <h6 class="col-lg-3 d-none d-lg-flex justify-content-center py-3">Termos de uso</h6>
+                    <h6 class="col-lg-3 d-none d-lg-flex justify-content-center py-3">Declaração de privacidade</h6>
+                    <h6 class="col-lg-3 d-none d-lg-flex justify-content-center py-3">Preferências de Cookies</h6>
+                    <h6 class="col-lg-3 d-none d-lg-flex justify-content-center py-3">Centro de ajuda</h6>
+            </div>
+            <div class="row bg-gray">
+                <div class="col-12">
+                    <div class="d-flex justify-content-center">
+                        <p class="py-3">Clone da Home Page do Netflix desenvolvido por <a href="https://www.linkedin.com/in/rodrigo-santos-5706b1192" class="text-decoration-none">Rodrigo Santos</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="./assets/js/view.js">
+
+</script>
+</body>
+</html>
